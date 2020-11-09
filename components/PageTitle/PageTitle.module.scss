@@ -1,0 +1,71 @@
+.PageTitle {
+  position: relative;
+  width: 100%;
+  margin-bottom: 100px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 80px;
+  }
+  @media screen and (max-width: 991px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: 575px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+    padding: 16px 15px 14px;
+    background: #252525;
+    border-bottom: 1px solid #333;
+    z-index: 11;
+  }
+}
+.ShadowTitle {
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-55%);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  font-size: 120px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 1;
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 991px) {
+    font-size: 110px;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+  }
+}
+.Title {
+  h1 {
+    font-weight: 900;
+    font-size: 68px;
+    letter-spacing: 0.02em;
+    span {
+      color: #ffb400;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    h1 {
+      font-size: 56px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    h1 {
+      font-size: 26px;
+      letter-spacing: 0.02em;
+      span {
+        color: #ffb400;
+      }
+    }
+  }
+}

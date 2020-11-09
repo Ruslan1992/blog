@@ -1,0 +1,84 @@
+.ContactForm {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 575px) {
+    margin-bottom: 40px;
+  }
+
+  input,
+  textarea {
+    color: #fff;
+    display: block;
+    background: #181b1c;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    &:focus,
+    &:active {
+      outline: none;
+      border-color: #ffb400;
+    }
+  }
+  .formGroup{
+    position: relative;
+    width: calc(33.33333% - 20px);
+    margin-right: 30px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    @media screen and (max-width: 767px) {      
+      margin-right: 0;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  }
+  .error{
+    color: #ffb400;
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transform: translateY(20px);
+  }
+  .formGroupMessage{    
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+    
+    @media screen and (max-width: 767px) {    
+      margin-top: 0;
+    }
+  }
+  input{    
+    width: 100%;
+    padding: 12px 20px;
+  }
+  textarea {
+    width: 100%;
+    padding: 12px 20px;
+    min-height: 160px;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    color: #fff !important;
+    background: #181b1c !important;
+  }
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #181b1c inset;
+    -moz-box-shadow: 0 0 0 1000px #181b1c inset;
+    box-shadow: 0 0 0 1000px #181b1c inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    -webkit-text-fill-color: #fff !important;
+  }
+}

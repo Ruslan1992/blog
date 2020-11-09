@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import '~bootstrap';
+@import './circle.scss';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Monsterrat', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  cursor: default;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 0;
+}
+.page-block {
+  margin-bottom: 100px;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    text-shadow: 2px 2px 3px #1e2223;
+    letter-spacing: 0.05em;
+    span {
+      color: #ffb400;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    margin-bottom: 60px;
+    h2 {
+      font-size: 21px;
+      margin-bottom: 50px;
+      text-align: left;
+    }
+  }
+}
+.separator {
+  border-top: 1px solid #777;
+  margin: 0 auto 80px;
+  width: 100%;
+  max-width: 40%;
+  @media screen and (max-width: 575px) {
+    margin: 0 auto 50px;
+  }
+}
+.text-yellow {
+  color: #ffb400;
+}
+.Page {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: url('/images/main-bg.jpg');
+  box-sizing: border-box;
+  color: #fff;
+}
+.yellow {
+  color: #ffb400;
+}
+.main-page {
+  font-size: 18px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    margin: 0 0 5px 0;
+    color: rgba(255, 255, 255, 0.6);
+    strong {
+      font-weight: 400;
+      color: #ffff;
+    }
+  }
+}
+
+.btn-yellow {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: linear-gradient(145deg, #ffc100, #e6a200);
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px !important;
+  font-weight: 600;
+  &:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+}
+.github,
+.facebook {
+  color: #181b1c !important;
+  background: #fff !important;
+  border: 8px solid #181b1c;
+  font-size: 34px !important;
+  line-height: 34px !important;
+  &:hover {
+    background: #ffc100 !important;
+  }
+}
+.border-bottom-none {
+  border-bottom: none;
+}
+.row {
+  width: calc(100% + 30px);
+}
+@media screen and (max-width: 1350px) and (min-width: 992px) {
+  .container {
+    max-width: calc(100% - 160px);
+  }
+}

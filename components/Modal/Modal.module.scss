@@ -1,0 +1,85 @@
+.show {
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modalContent {
+  @media screen and (max-width: 767px) {
+    border-radius: 0;
+    border: none;
+  }
+}
+.modalDialog {
+  color: #333;
+  position: relative;
+  max-width: 1024px;
+  width: auto;
+  margin: 50px auto;
+  @media screen and (max-width: 1200px) {
+    max-width: calc(100% - 140px);
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+}
+.modalBody {
+  padding: 20px 30px 20px 20px;
+}
+.btnClose {
+  cursor: pointer;
+  outline: none;
+  span {
+    cursor: pointer;
+  }
+  &:hover,
+  &:active {
+    outline: none;
+  }
+}
+.image {
+  display: block;
+  margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
+}
+.info {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.detail {
+  li {
+    font-size: 18px;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 0;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+.ModalBtn {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  line-height: 1;
+  position: absolute;
+  z-index: 99999;
+  color: #fff;
+  opacity: 0.7;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.PrevModal {
+  left: -50px;
+}
+.NextModal {
+  right: -50px;
+}

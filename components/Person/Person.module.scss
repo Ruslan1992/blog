@@ -1,0 +1,232 @@
+.title {
+  margin-bottom: 30px;
+}
+.content {
+  margin-bottom: 30px;
+  h4 {
+    margin-bottom: 30px;
+    span {
+      color: #ffb400;
+    }
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.PersonInfo {
+  margin-bottom: 60px;
+  ul {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  li {
+    margin: 0 0 3px 0;
+    color: rgba(255, 255, 255, 0.7);
+    strong {
+      font-weight: 400;
+      color: #ffff;
+    }
+    &:first-of-type {
+      padding-top: 20px;
+    }
+    &:nth-child(4) {
+      margin-bottom: 40px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: 1240px) and (min-width: 992px) {
+    ul {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    li {
+      &:first-of-type {
+        padding-top: 8px;
+      }
+      &:nth-child(-n + 3) {
+        strong {
+          display: block;
+        }
+      }
+      &:nth-child(4) {
+        margin: 12px 0 3px 0;
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    max-width: 405px;
+    margin: 0 auto 30px auto;
+  }
+
+  @media screen and (max-width: 575px) {
+    text-align: center;
+    ul {
+      margin-bottom: 15px;
+    }
+    li {
+      &:first-of-type {
+        padding-top: 8px;
+      }
+      &:nth-child(4) {
+        margin: 0 0 3px 0;
+      }
+    }
+  }
+}
+.PersonAvatar {
+  background: rgba(255, 255, 255, 0.1);
+  border: 5px solid #ffb400;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  float: left;
+  img {
+    display: block;
+    transform: translateX(-2px);
+    max-width: 100%;
+  }
+  @media screen and (max-width: 575px) {
+    float: none;
+    margin: 0 auto;
+  }
+}
+.ListStats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.BoxStats {
+  width: calc(50% - 15px);
+  padding: 18px 30px 22px 40px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(119, 119, 119, 0.5);
+  box-shadow: 5px 5px 3px #0d0d0e, -5px -5px 3px #333536;
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  h3 {
+    display: inline-block;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    &:after {
+      content: '+';
+      position: absolute;
+      right: -24px;
+      font-size: 33px;
+      font-weight: 300;
+      top: 2px;
+    }
+  }
+  div {
+    padding-left: 45px;
+    margin-bottom: 0;
+    max-width: 150px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 30px;
+      height: 1px;
+      background: #777;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    padding: 15px 20px 20px 20px;
+    div {
+      max-width: 105px;
+      padding-left: 0;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+.ExperienceList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ExperienceItem {
+  width: 50%;
+  @media screen and (max-width: 991px){
+    width: 100%;
+  }
+}
+
+.resumeBox {
+  li {
+    position: relative;
+    padding: 0 20px 0 60px;
+    margin: 0 0 50px;
+    h5 {
+      color: #fff;
+      font-size: 18px;
+      margin: 7px 0 10px;
+    }
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #ffb400;
+  }
+  li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    border-left: 1px solid #777;
+  }
+  .time {
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 12px;
+    display: inline-block;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+  }
+  @media screen and (max-width: 991px){
+    padding: 0 0 0 20px;
+    li{
+      &:nth-child(2){
+        order: 3;
+      }
+      &:nth-child(3){
+        order: 1;
+      }
+      &:nth-child(4){
+        order: 4;
+      }
+      &:nth-child(5){
+        order: 2;
+      }
+      &:nth-child(6){
+        order: 5;
+      }
+    }
+  }
+}
