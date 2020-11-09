@@ -7,7 +7,7 @@ import { PersonExperience } from 'components/Person/PersonExperience';
 import { getPersonInfo, getPersonSkills, getPersonExperience } from 'lib/api';
 
 const headProps = {
-  title: 'Resume',
+  title: 'About | Ruslan Andreichikov',
 };
 
 export default function Resume({ personInfo, personSkills, personExperience }) {

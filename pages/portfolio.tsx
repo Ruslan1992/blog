@@ -8,7 +8,7 @@ import cls from 'styles/portfolio.module.scss';
 import { getPortfolio } from 'lib/api';
 
 const headProps = {
-  title: 'Home page',
+  title: 'Portfolio | Ruslan Andreichikov',
 };
 
 const Portfolio = ({ portfolio }) => {

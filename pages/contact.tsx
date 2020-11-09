@@ -9,7 +9,7 @@ import { getPersonContact } from 'lib/api';
 import cls from 'styles/contact.module.scss';
 
 const headProps = {
-  title: 'Contacts | Ruslan Andreichikov',
+  title: 'Contact | Ruslan Andreichikov',
 };
 
 // const serializers = {

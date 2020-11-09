@@ -13,7 +13,7 @@ type HomeContent = {
 };
 
 const headProps = {
-  title: 'Home page',
+  title: 'Ruslan Andreichikov',
 };
 
 export const getStaticProps = async () => {
