@@ -45,6 +45,9 @@ li {
 }
 .page-block {
   margin-bottom: 100px;
+  &:last-child{
+    margin-bottom: 0;
+  }
   h2 {
     text-align: center;
     text-transform: uppercase;

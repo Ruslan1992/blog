@@ -1,4 +1,5 @@
 import cls from './Person.module.scss';
+import BlockContent from '@sanity/block-content-to-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const PersonExperience = ({ education, experience }) => (
@@ -15,7 +16,7 @@ export const PersonExperience = ({ education, experience }) => (
             <div className={cls.icon}>
               {i === 0 ? (
                 <FontAwesomeIcon icon='graduation-cap' />
-              ) : (                
+              ) : (
                 <FontAwesomeIcon icon='briefcase' />
               )}
             </div>
@@ -23,7 +24,7 @@ export const PersonExperience = ({ education, experience }) => (
               {item.duaration}
             </span>
             <h5 className='poppins-font text-uppercase'>{item.title}</h5>
-            <p className='open-sans-font'>{item.description}</p>
+            <BlockContent blocks={item.description} className={cls.ExperienceContent} />
           </li>
         ))}
       </ul>
