@@ -30,7 +30,7 @@ export const PersonInfo = ({ avatar, info, stats }: PropsType) => (
             </li>
           ))}
         </ul>
-        <a href='/' className={'btn btn-yellow'}>
+        <a href='/Resume.pdf' target='_blank' className={'btn btn-yellow'}>
           Download CV
         </a>
       </div>
